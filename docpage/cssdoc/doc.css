@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Neutraface Text Bold", "Bahnschrift", "Corbel Light";
+    font-size: 20px;
+}
+:root{
+    --bg-color: hsla(54, 93%, 53%, 1.0);/*background color*/
+    --section-color: hsla(225, 6%, 13%, 1.0);/*navbar color, code tag color, content font color*/
+    --text-color: hsla(0, 0%, 100%, 1.0); /*link color*/
+    --header-text-color: hsla(0, 0%, 0%, 1.0);/*color of page header*/ 
+    --code-color: hsl(0, 0%, 24%, 1.0);
+
+}
+body{
+    background-color: var(--bg-color);
+}
+br{
+    margin: 0;
+    padding: 0;
+}
+/*there must be at least one media query*/
+#main-doc{
+    /*main tag that wraps all others*/
+    display: grid; /*using grid because we have to change the layout orientation*/
+    column-gap: 0px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid: 80% / 25% 70%;
+    grid-template-areas: 
+        "left right right"
+        "left right right";
+}
+#navbar{
+    /*Navigation Bar to navigate through
+      the content.
+
+        Thought to position it on the left side*/
+    position: fixed;
+    justify-content: center;
+
+    grid-area: left;
+
+    margin: 8% 0 0 1.5%;
+
+    width: 22%;
+    height: 30%;
+
+    border-radius: 10px;
+
+}
+#page-header{
+    /*The Page header that
+        I */
+    margin: 0 auto;
+    text-align: center;
+
+    font-size: 200%;
+
+
+    background: var(--bg-color);
+    color: var(--header-text-color);
+}
+@media (max-width: 1240px){
+    #page-header{
+        
+    }
+}
+#js{
+    position: relative;
+    top: 3px;
+
+    margin: 0 auto;
+    padding: 0;
+    width: 25%;
+
+    font-size: 150%;
+
+    text-align: end;
+
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+}
+.nav-link{
+    display: block;
+    align-content: center;
+    text-align: left;
+    padding: 20px;
+
+    border-bottom: 1px solid var(--text-color);
+
+    background: var(--section-color);
+    color: var(--text-color);
+    text-decoration: none;
+
+    font-size: 25px;
+
+}
+.first-link{
+    border-radius: 10px 10px 0 0;
+}
+.last-link{
+    border-bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+#on-right{
+    /*Right part*/
+    grid-area: right;
+
+    text-align: justify;
+
+    margin: auto;
+    padding: 20px;
+    
+    background: var(--section-color);
+    color: var(--text-color);
+}
+.main-section{
+    margin: 5% 3%;
+
+    line-height: 200%;
+    font-weight: 100;
+}
+.section-header{
+    margin: 0 0 0.3em 0;
+
+    line-height: 2em;
+
+    font-size: 2em;
+    font-weight: 900;
+
+    border-bottom: 2px dotted white;
+}
+.list{
+    margin: 20px auto;
+    list-style-position: inside;
+}
+code{
+    display: block;
+    margin: 3% auto;
+    padding: 3%;
+
+    width: 100%;
+
+    box-shadow: 0px 0px 5px var(--text-color);
+
+    border-radius: 10px;
+
+
+    background-color: var(--code-color);
+
+    font-family: monospace;
+    font-size: 0.8em;
+}
+#reference-link:visited{
+
+    color: var(--text-color);
+}

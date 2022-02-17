@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: JS Documentation</title>
+    <link rel="stylesheet" href="../cssdoc/doc.css">
+    <link href="//db.onlinewebfonts.com/c/33c69019b1d9231e1004f52ae937b0da?family=Neutraface+Text+Bold" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header id="page-header"><p id="js">JS</p> Documentation</header>
+            <a href="#about" class="nav-link first-link">About</a>
+            <a href="#used_for" class="nav-link">What is it used for?</a>
+            <a href="#first_ex" class="nav-link">First example</a>
+            <a href="#comments" class="nav-link">Comments</a>
+            <a href="#variables" class="nav-link">Variables</a>
+            <a href="#reference" class="nav-link last-link">Reference</a>
+        </nav>
+        <div id="on-right">
+            <section id="about" class="main-section">
+                <header class="section-header">About</header>
+                <p>
+                    JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
+                </p>
+            </section>
+            <section id="used_for" class="main-section">
+                <header class="section-header">What is it used for?</header>
+                <p>
+                    The core client-side JavaScript language consists of some common programming features that allow you to do things like:
+                </p>
+                <ul class="list">
+                    <li>
+                        Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called name.
+                    </li>
+                    <li>
+                        Operations on pieces of text (known as "strings" in programming).
+                    </li>
+                    <li>
+                        Running code in response to certain events occurring on a web page.
+                    </li>
+                    <li>
+                        And much more!
+                    </li>
+                </ul>
+            </section>
+            <section id="first_ex" class="main-section">
+                <header class="section-header">First example</header>
+                <p>
+                    JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.
+                </p>
+                <p>
+                    However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example.
+                </p>
+                <ol class="list">
+                    <li>
+                        Go to your test site and create a new folder named scripts. Within the scripts folder, create a new file called main.js, and save it.
+                    </li>
+                    <li>
+                        In your index.html file, enter this code on a new line, just before the closing *body* tag:
+                    </li>
+                    <code>
+                        &lt;script src="scripts/main.js"&gt;&lt;/script&gt;
+                    </code>
+                    <li>
+                        This is doing the same job as the *link* element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).
+                    </li>
+                    <li>
+                        Add this code to the main.js file:
+                    </li>
+                    <code>
+                        const myHeading = document.querySelector('h1');
+                        <br>
+                        myHeading.textContent = 'Hello world!';
+                    </code>
+                    <li>
+                        Make sure the HTML and JavaScript files are saved. Then load index.html in your browser.
+                    </li>
+                </ol>
+                <p>
+                    The heading text changed to Hello world! using JavaScript. You did this by using a function called querySelector() to grab a reference to your heading, and then store it in a variable called myHeading. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.
+                </p>
+                <p>
+                    Following that, the code set the value of the myHeading variable's textContent property (which represents the content of the heading) to Hello world!.
+                </p>
+            </section>
+            <section id="comments" class="main-section">
+                <header class="section-header">Comments</header>
+                <p>
+                    As with HTML and CSS, it is possible to write comments into your JavaScript code that will be ignored by the browser, and exist to provide instructions to your fellow developers on how the code works (and you, if you come back to your code after six months and can't remember what you did). Comments are very useful, and you should use them often, particularly for larger applications. There are two types:
+                </p>
+                <ul class="list">
+                    <li>
+                        A single line comment is written after a double forward slash (//), e.g.
+                    </li>
+                    <code>
+                        // I am a comment
+                    </code>
+                    <li>
+                        A multi-line comment is written between the strings /* and */, e.g.
+                    </li>
+                    <code>
+                        /*
+                          I am also
+                          a comment
+                        */
+                    </code>
+                </ul>
+            </section>
+            <section id="variables" class="main-section">
+                <header class="section-header">Variables</header>
+                <p>
+                    To use a variable, you've first got to create it — more accurately, we call this declaring the variable. To do this, we type the keyword let followed by the name you want to call your variable:
+                </p>
+                <code>
+                    let myName;
+                    let myAge;
+                </code>
+                <p>
+                    Here we're creating two variables called myName and myAge. Try typing these lines into your web browser's console. After that, try creating a variable (or two) with your own name choices.
+                </p>
+                <p>
+                    Once you've declared a variable, you can initialize it with a value. You do this by typing the variable name, followed by an equals sign (=), followed by the value you want to give it. For example:
+                </p>
+                <code>
+                    myName = 'Chris';
+                    myAge = 37;
+                </code>
+                <p>
+                    Try going back to the console now and typing in these lines. You should see the value you've assigned to the variable returned in the console to confirm it, in each case.
+                </p>
+            </section>
+            <section id="reference" class="main-section">
+                <header class="section-header">Reference</header>
+                <p>
+                    Every information here was taken from <a id="reference-link" href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>.
+                </p>
+            </section>
+        </div>    
+    </main>
+</body>
+</html>

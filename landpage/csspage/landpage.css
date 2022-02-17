@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Bahnschrift", "Corbel Light";
+    font-size: 25px;
+}
+#header{
+    z-index: 1;
+    position: fixed;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+    margin: 0 auto;
+
+    width: 100%;
+    height: auto;
+
+    background-color: #fff;
+
+    border-bottom: 1px solid black;
+    box-shadow: 0 5px 10px black;
+}
+#header-img{
+    display: block;
+
+    margin: 0 auto;
+
+    width:100%;
+
+    font-style: italic;
+    font-size: 3.5vw;
+
+    text-decoration:double;
+    text-shadow: 3px 3px 30px rgb(24, 23, 23);
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+#header-img>p:hover{
+    cursor: default;
+}
+@media (max-width: 1120px){
+    #header-img>p{
+        font-size: 30px;
+    }
+}
+#nav-bar{
+    display: flex;
+
+    min-width: 71px;
+    width: 100%;
+    height: auto;
+}
+
+#nav-bar > ul{
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+}
+
+@media (max-width: 1200px){
+    #nav-bar > ul{
+        margin: 5px auto;
+
+        line-height: 10pt;
+    }
+}
+@media (max-width: 530px){
+    #nav-bar > ul{
+        flex-direction: column;
+        border-left: 1px solid gray;
+    }
+}
+#nav-bar  li{
+    display: block;
+    margin: 0 3%;
+}
+
+.nav-link{
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    color: black;
+
+    font-size: 0.8em;
+}
+
+.nav-link:hover{
+    color: gray;
+}
+@media (max-width: 1200px){
+    .nav-link{
+        font-size: 0.6em;
+    }
+}
+section{
+    z-index: 0;
+
+    margin: 0 auto;
+    padding-top: 3.5%;
+
+    max-width: 1024px;
+    width: 100%;
+
+    text-align: center;
+}
+
+#title{
+    margin: 1em auto;
+    font-size: 2em;
+}
+@media (max-width: 1200px){
+    #title{
+        margin-top: 1.2em;
+    }
+}
+@media (max-width: 323px){
+    #title{
+        margin-top: 1.5em;
+    }
+}
+
+#email{
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 0.5%;
+
+    min-width: 220px;
+    width: 40%;
+
+    text-align: center;
+
+    border: 0.1px solid black;
+
+    font-size: 0.7em;
+    font-family:"Corbel Light";
+}
+
+#submit{
+    display: block;
+
+    margin: 0 auto;
+    padding: 0.2% 0.5%;
+
+    min-width: 70px;
+    width:10%;
+    height: 4%;
+
+    border: 1px ridge black;
+    border-radius: 5px;
+
+    font-family: "Corbel Light";
+    font-size: 0.8em;
+    font-weight: 800;
+    background-color: white;
+}
+#submit:hover{
+    border-radius: 5px;
+    background-color: gray;
+
+    cursor: pointer;
+}
+#features{
+    margin: 100px auto;
+    text-align: justify;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    margin-bottom: 30px;
+}
+.feature-icon img{
+    display: block;
+
+    margin: 0 auto;
+    margin-right: 10px;
+
+    min-width: 50px;
+    width: 120%;
+    height: auto;
+}
+.feature-description{
+    min-width: 220px;
+    width: 80%;
+}
+
+.feature p{
+    font-family: "Corbel Light";
+    font-size: 0.9em;
+}
+@media (max-width: 700px){
+    .feature{
+        flex-direction: column;
+    }
+    .feature-icon img{
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .feature h3{
+        text-align: center;
+
+    }
+}
+#how-works{
+    margin-bottom: 100px;
+}
+@media (max-width: 580px){
+    #how-works iframe{
+        width: 80%;
+        transition: width 2s;
+    }
+}
+#pricing{
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 40px;
+
+    min-width: 220px;
+    
+}
+.plans{
+    margin: 20px auto;
+    padding: 20px;
+
+    box-shadow: 0 10px 10px black;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.plans h4{
+    font-size: larger;
+}
+.plans li{
+    margin: 5px auto;
+    width: 80%;
+
+    text-align: left;
+
+    list-style-type:circle;
+    list-style-position:inside;
+    
+    font-family:"Corbel Light";
+    font-size: 0.8em;
+
+   
+}
+@media (max-width: 900px){
+    #pricing{
+        flex-wrap: wrap;
+    }
+}
+
+footer{
+    margin: 0 auto;
+
+    max-width: 1024px;
+    width: 100%;
+
+    text-align: center;
+}
+footer ul{
+    display:flex;
+    justify-content: space-around;
+}
+footer li{
+    display:block;
+}
+footer a{
+    font-weight: 800;
+    color: black;
+
+    text-decoration: none;
+    
+    font-size: 0.7em;
+}
+footer a:hover{
+    color: gray;
+    transition: color 1s;
+}
+footer p{
+    margin: 0 auto;
+
+    padding-top: 5px;
+
+    width: 20%;
+
+    font-size: 0.6em;
+
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(30deg,gray, white, gray);
+}
+
